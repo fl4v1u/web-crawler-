@@ -85,7 +85,7 @@ Installation
 
 Clone Repository
 
-git clone https://github.com/fl4v1u/web-crawler.git
+git clone https://github.com/fl4v1u/web-crawler-.git
 
 ⸻
 Execution of the programm in the terminal :
