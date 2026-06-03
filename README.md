@@ -2,6 +2,45 @@ Java Web Crawler with Jsoup
 
 A simple but powerful web crawler written in Java using Jsoup.
 
+NEW UPDATE — Multithreading Support
+
+The web crawler now supports multithreaded crawling with up to 10 concurrent threads, significantly improving crawling speed and reducing waiting times. 
+
+int numThreads = 10; // Line 70 
+
+Important — Rate Limits & Responsible Usage
+
+Some websites enforce rate limits or anti-bot protection systems.
+Using too many concurrent threads may result in:
+
+* Temporary IP bans
+* CAPTCHA challenges
+* Blocked requests
+* Increased server load
+
+If you experience blocking issues, reduce the thread count in the source code:
+
+int numThreads = 1; // Line 70
+
+Ethical Usage Warning
+
+This software is intended for educational and research purposes only.
+
+Improper use of multithreaded crawling can place heavy load on web servers and may negatively impact website performance. In extreme cases, aggressive crawling behavior could resemble a denial-of-service (DoS) attack.
+
+Disclaimer
+
+The developer of this project is not responsible for any illegal, abusive, or unethical use of this software.
+
+By using this project, you accept full responsibility for your actions and agree to comply with all applicable laws and regulations.
+
+Always:
+
+* Respect robots.txt
+* Follow website Terms of Service
+* Use reasonable crawl delays
+* Avoid excessive request rates
+        
 This crawler can:
 
 * Crawl a single page
@@ -137,7 +176,6 @@ Possible upgrades:
 
 * Export to JSON
 * Export to CSV
-* Multi-threaded crawling
 * Database integration
 * AI content extraction
 
@@ -150,9 +188,3 @@ This project is for educational purposes only.
 Always respect:
 * website terms of service
 
-
-⸻
-
-License
-
-MIT License
